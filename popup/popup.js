@@ -1,5 +1,30 @@
 // TempMail Pro - Popup JavaScript for Firefox
 
+// Test code for popup.js - ADD THIS AT THE TOP
+console.log("Popup script loaded!");
+
+// Add this test function
+function testBackgroundConnection() {
+  console.log("Testing background communication...");
+  browser.runtime.sendMessage({ action: "test" })
+    .then(response => {
+      console.log("Response from background:", response);
+      showStatus("Background connection successful!");
+    })
+    .catch(error => {
+      console.error("Connection test error:", error);
+      showStatus("Connection error: " + error.message);
+    });
+}
+
+// Call the test function when popup loads
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Popup DOM loaded, testing connection...");
+  testBackgroundConnection();
+  
+  // Rest of your existing code will still run...
+});
+
 // Constants
 const SERVICES = {
   'guerrillamail': {
@@ -103,7 +128,7 @@ async function loadState() {
   state.currentAddress = data.currentAddress || null;
   state.currentService = data.currentService || 'guerrillamail';
   state.currentDomain = data.currentDomain || null;
-  state.refreshInterval = data.refreshInterval || 3;
+  state.refreshInterval = data.refreshInterval || 5;
   state.recentlyUpdated = data.recentlyUpdated || [];
   
   // Set service selector to current service
