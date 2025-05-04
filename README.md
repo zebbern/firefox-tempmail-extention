@@ -1,11 +1,31 @@
-## firefox-tempmail-extention
-> Firefox temp-mail extension providing temp mails from 5 different providers
+## TempMail Pro for Firefox ¤ Installation
 
-### Installtion:
+1. **Navigate to Firefox debugging page**: `Enter:` **<kbd>about:debugging#/runtime/this-firefox</kbd> **in your address bar**
+2. **Select <kbd>This Firefox</kbd> from the left sidebar**
+3. **Click <kbd>Load Temporary Add-on...</kbd>**
+4. **Select the downloaded ZIP file** (or the manifest.json file directly)
+5. The extension will now appear in your toolbar
 
-1. **Go to: `about:debugging#/runtime/this-firefox`**
-2. **Click on: `This Firefox`**
-3. **Click on: `Load Temporary Add-on…`**
-4. **Find the downloaded zip you got from here and click open**
-5. All done!
+## Features
 
+- Create disposable email addresses instantly
+- Access emails from multiple providers:
+  - Guerrilla Mail
+  - Mail.gw
+  - DropMail.me
+  - Mail.tm
+  - TempMail.lol
+- Automatic inbox refresh
+- Email expiration timer
+- Copy email address with one click
+- View HTML and raw message content
+- Real-time notifications for new messages
+
+## Development
+
+For developers interested in contributing or customizing this extension:
+- Written in vanilla JavaScript
+- Uses browser.storage for persistence
+- Handles multiple API implementations for different providers
+
+*Created by github.com/zebbern*
