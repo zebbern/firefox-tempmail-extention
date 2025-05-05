@@ -1,10 +1,10 @@
 ## TempMail Pro for Firefox ¤ Installation
 
-1. **Navigate to Firefox debugging page**: `Enter:` **<kbd>about:debugging#/runtime/this-firefox</kbd> **in your address bar**
+1. Put <kbd>about:debugging#/runtime/this-firefox</kbd> **in your address bar**
 2. **Select <kbd>This Firefox</kbd> from the left sidebar**
 3. **Click <kbd>Load Temporary Add-on...</kbd>**
 4. **Select the downloaded ZIP file** (or the manifest.json file directly)
-5. The extension will now appear in your toolbar
+5. **The extension will now appear in your toolbar**
 
 ## Features
 
